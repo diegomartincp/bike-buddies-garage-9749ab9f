@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PlusCircle, Wrench, Trophy, ShoppingBag } from "lucide-react";
+import { AuthButton } from "@/components/auth/AuthButton";
 
 const Index = () => {
   return (
@@ -11,9 +12,12 @@ const Index = () => {
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Bike Buddies Garage</h1>
           <p className="text-xl text-gray-200 mb-8">Connect, Share, and Upgrade Your Ride</p>
-          <Button size="lg" className="bg-red-600 hover:bg-red-700">
-            <PlusCircle className="mr-2 h-5 w-5" /> Create Your Garage
-          </Button>
+          <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
+            <AuthButton />
+            <Button size="lg" className="bg-red-600 hover:bg-red-700">
+              <PlusCircle className="mr-2 h-5 w-5" /> Create Your Garage
+            </Button>
+          </div>
         </div>
       </section>
 
