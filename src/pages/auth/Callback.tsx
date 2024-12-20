@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL!,
-  import.meta.env.VITE_SUPABASE_ANON_KEY!
+  "https://rlpjwvpqwxjxvxqvxdxe.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscGp3dnBxd3hqeHZ4cXZ4ZHhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDk4MjI0NzAsImV4cCI6MjAyNTM5ODQ3MH0.Pu_zyKrBpE4_LvjUOHB7FT2KuPWwCPvqYo7IZHUgUJc"
 );
 
 const Callback = () => {
